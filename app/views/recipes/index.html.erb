@@ -1,0 +1,20 @@
+<h1>Recipe Finder</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Rank</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @recipes.each do |recipe| %>
+            <tr>
+                <td class="left-td"><%= link_to image_tag(recipe["image_url"], width: 100, height: 100), recipe["source_url"] %></td>
+                <td class="title"><%= link_to sanitize(recipe["title"]), recipe["source_url"] %></td>
+                <td class="center-td right-td"><%= recipe["social_rank"].round(2) %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

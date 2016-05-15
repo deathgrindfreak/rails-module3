@@ -1,0 +1,65 @@
+// Place all the styles related to the recipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+    padding: 20px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+table {
+    margin: 10px;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    border: 1px solid #444;
+}
+
+thead {
+    tr {
+        border-bottom: 2px solid #444;
+    }
+
+    tr th {
+        padding-bottom: 10px;
+    }
+}
+
+tbody {
+    td {
+        padding: 10px;
+    }
+
+    td.left-td {
+        padding: 10px 10px 10px 20px;
+    }
+
+    td.right-td {
+        padding: 10px 20px 10px 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ededed;
+    }
+}
+
+.title {
+    width: 400px;
+}
+
+.center-td {
+    text-align: center;
+}
